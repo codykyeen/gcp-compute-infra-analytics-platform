@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.pyc
+venv/
+airflow-env/
+
+
+# Logs
+logs/
+
+
+# Credentials (VERY IMPORTANT)
+credentials/
+
+
+# OS
+.DS_Store
+
+
+
+# Docker
+*.log
+
+
+# Environment variables
+.env
+
+# dbt target files
+target/
+dbt_modules/
+dbt_packages/
+logs/
