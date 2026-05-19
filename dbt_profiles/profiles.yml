@@ -1,0 +1,10 @@
+resource_models:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: oauth
+      project: ***-prod*****
+      dataset: stl_resource_log
+      threads: 4
+      timeout_seconds: 300

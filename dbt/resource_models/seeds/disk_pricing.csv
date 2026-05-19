@@ -1,0 +1,5 @@
+disk_type,price_per_gib_month
+pd-standard,0.04
+pd-balanced,0.10
+pd-ssd,0.17
+local-ssd,0.218

@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: vm_full_details
+    description: "Latest state of instances with cost breakdown"
+
+    columns:
+      - name: instance_id
+        tests:
+          - not_null
+          - unique
+
+      - name: machine_monthly_cost_as_conf
+        tests:
+          - not_null
