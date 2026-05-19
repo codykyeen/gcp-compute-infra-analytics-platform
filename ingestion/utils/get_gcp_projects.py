@@ -39,7 +39,7 @@ def get_active_gcp_projects(config):
                 logger.info(f"Discovered {len(projects)} projects from GCP")
                 return projects
             else:
-                projects = ["stl-devops"]
+                projects = ["***-dev****"]
                 logger.warning(f"Fall back to {projects} since no GCP projects discovered")
                 return projects
 
