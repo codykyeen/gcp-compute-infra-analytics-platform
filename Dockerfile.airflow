@@ -1,0 +1,16 @@
+FROM apache/airflow:2.9.1-python3.10
+
+USER root
+
+# Install gcloud SDK
+RUN apt-get update && apt-get install -y curl gnupg && \
+    curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add - && \
+    echo "deb http://packages.cloud.google.com/apt cloud-sdk main" \
+      > /etc/apt/sources.list.d/google-cloud-sdk.list && \
+    apt-get update && apt-get install -y google-cloud-sdk
+
+USER airflow
+
+
+#Install dbt
+RUN pip install dbt-bigquery
