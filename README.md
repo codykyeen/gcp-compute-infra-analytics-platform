@@ -1,6 +1,6 @@
-This three day learning sprint was designed to familiarize myself with a modern data stack while solving a real world business problem.
+This three day learning sprint was designed to familiarize myself with a modern data stack while solving a real world business problem. Please note that your GCP Project and BigQuery dataset names will need to be added to the appropriate files.
 
-See: https://github.com/codykyeen/gcp-compute-infra-analytics-platform/blob/main/Executive%20Summary.pdf
+Executive Summary: https://github.com/codykyeen/gcp-compute-infra-analytics-platform/blob/main/Executive%20Summary.pdf
 
 # 🚀 GCP Compute Resource Pipeline
 
