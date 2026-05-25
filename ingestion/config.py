@@ -2,7 +2,7 @@
 import os
 
 #Define Data Location Variables
-DATA_PROJECT_ID = os.getenv("DATA_GCP_PROJECT", "***-prod*****")
+DATA_PROJECT_ID = os.getenv("DATA_GCP_PROJECT", "<gcp_project>")
 DATASET_NAME = os.getenv("BQ_DATASET", "stl_resource_log")
 
 
