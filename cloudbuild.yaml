@@ -5,7 +5,7 @@ steps:
       [
         'build',
         '-t',
-        'us-central1-docker.pkg.dev/***-prod****/gcp-compute-resource-reporting/gcp-compute-resource-reporting',
+        'us-central1-docker.pkg.dev/<gcp_project>/gcp-compute-resource-reporting/gcp-compute-resource-reporting',
         '.'
       ]
 
@@ -14,7 +14,7 @@ steps:
     args:
       [
         'push',
-        'us-central1-docker.pkg.dev/***-prod****/gcp-compute-resource-reporting/gcp-compute-resource-reporting'
+        'us-central1-docker.pkg.dev/<gcp_project>/gcp-compute-resource-reporting/gcp-compute-resource-reporting'
       ]
 
   #Update Cloud Run job with new image
@@ -23,9 +23,9 @@ steps:
     args:
       [
         'run', 'jobs', 'update', 'gcp-compute-resource-reporting',
-        '--image', 'us-central1-docker.pkg.dev/***-prod****/gcp-compute-resource-reporting/gcp-compute-resource-reporting',
+        '--image', 'us-central1-docker.pkg.dev/<gcp_project>/gcp-compute-resource-reporting/gcp-compute-resource-reporting',
         '--region', 'us-central1'
       ]
 
 images:
-  - 'us-central1-docker.pkg.dev/***-prod****/gcp-compute-resource-reporting/gcp-compute-resource-reporting'
+  - 'us-central1-docker.pkg.dev/<gcp_project>/gcp-compute-resource-reporting/gcp-compute-resource-reporting'
