@@ -1,5 +1,5 @@
 ## 🔄 dbt Transformation Layer
-## convert raw GCP resource data into structured, analytics-ready datasets.
+## Convert raw GCP resource data into structured, analytics-ready datasets.
 
 ### Core Responsibilities
 
