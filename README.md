@@ -1,4 +1,4 @@
-This three day learning sprint was designed to familiarize myself with a modern data stack while solving a real world business problem. Certain details have been omitted to protect company interested using *****. 
+This three day learning sprint was designed to familiarize myself with a modern data stack while solving a real world business problem.
 
 See: https://github.com/codykyeen/gcp-compute-infra-analytics-platform/blob/main/Executive%20Summary.pdf
 
@@ -16,9 +16,9 @@ This project is a fully automated data pipeline that:
 - Deploys via Cloud Build (CI/CD)
 
 The Cloud Run is scheduled to run hourly outside of this workflow (stateless exeuciton)
-See details: https://console.cloud.google.com/cloudscheduler?project=****-prod*****
+See details: https://console.cloud.google.com/cloudscheduler?project=<gcp_project>
 
-Dashboard Link: https://datastudio.google.com/reporting/db3bccb7-ea6b-4ed1-ac73-********/page/*****
+Dashboard Link: https://datastudio.google.com/reporting/<report_id>/page/<page_id>
 
 Screenshots: https://github.com/codykyeen/gcp-compute-infra-analytics-platform/tree/main/dashboard
 
@@ -139,8 +139,8 @@ password: admin
 
 ```bash
 gcloud run jobs execute gcp-compute-resource-reporting \
-  --region us-central1 \
-  --project ****-prod******
+  --region <region> \
+  --project <gcp_project>
   --wait
 ```
 
