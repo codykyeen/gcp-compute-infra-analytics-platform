@@ -53,7 +53,7 @@ services:
 
   airflow-init:
     <<: *airflow-common
-    command: bash -c "airflow db migrate && airflow users create --username admin --password admin --firstname Airflow --lastname Admin --role Admin --email admin@example.com"
+    command: bash -c "airflow db migrate && airflow users create --username admin --password <password> --firstname Airflow --lastname Admin --role Admin --email <email>"
     restart: "no"
 
 volumes:
