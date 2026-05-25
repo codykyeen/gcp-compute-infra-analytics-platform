@@ -29,15 +29,15 @@ Screenshots: https://github.com/codykyeen/gcp-compute-infra-analytics-platform/t
 ### Runtime Flow
 
 Airflow (Docker)
-    |
+    >
 Cloud Run Job
-    |
+    >
 Ingestion (Python)
-    |
+    >
 Raw BigQuery Tables
-    |
+    >
 dbt Transformations
-    |
+    >
 Analytics Tables
 
 ---
@@ -45,11 +45,11 @@ Analytics Tables
 ### Deployment Flow (CI/CD)
 
 GitHub
-    |
+    >
 Cloud Build
-    |
+    >
 Artifact Registry (Docker Image)
-    |
+    >
 Cloud Run Job (updated automatically)
 
 ---
