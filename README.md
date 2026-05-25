@@ -20,7 +20,7 @@ See details: https://console.cloud.google.com/cloudscheduler?project=<gcp_projec
 
 Dashboard Link: https://datastudio.google.com/reporting/<report_id>/page/<page_id>
 
-Screenshots: https://github.com/codykyeen/gcp-compute-infra-analytics-platform/tree/main/dashboard
+Screenshot: https://github.com/codykyeen/gcp-compute-infra-analytics-platform/tree/main/dashboard/dashboard_screenshot.png
 
 ---
 
