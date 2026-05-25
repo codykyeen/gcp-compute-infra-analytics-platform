@@ -25,10 +25,10 @@ with DAG(
         date
         export GOOGLE_APPLICATION_CREDENTIALS=/opt/airflow/credentials/service-account.json &&
         gcloud auth activate-service-account --key-file=$GOOGLE_APPLICATION_CREDENTIALS &&
-        gcloud config set project ***-prod***** &&
+        gcloud config set project <gcp_project> &&
         gcloud run jobs execute gcp-compute-resource-reporting \
-          --region us-central1 \
-          --project ***-prod***** \
+          --region <region> \
+          --project <gcp_project> \
           --wait
         """
     )
