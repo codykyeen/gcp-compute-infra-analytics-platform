@@ -10,7 +10,7 @@ def get_active_gcp_projects(config):
 
     #Allow for a light weight DEBUG run
     if config.DEBUG == "True":
-        projects = ["***-dev*****"]
+        projects = ["<gcp_project>"]
         logger.info(f"Debug mode enabled, using only {projects}")
         return projects
     else:
@@ -39,7 +39,7 @@ def get_active_gcp_projects(config):
                 logger.info(f"Discovered {len(projects)} projects from GCP")
                 return projects
             else:
-                projects = ["***-dev****"]
+                projects = ["<gcp_project"]
                 logger.warning(f"Fall back to {projects} since no GCP projects discovered")
                 return projects
 
